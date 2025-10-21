@@ -324,12 +324,14 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:mega_blast_furnace")
         .inputFluids("gtceu:oxygen 20786")
         .itemOutputs("20x gtceu:naquadah_alloy_ingot", "4x gtceu:invar_ingot", "2x gtceu:uranium_rhodium_dinaquadide_ingot", "gtceu:tin_ingot")
+        .category("gtceu:arc_furnace_recycling")
         .duration(20786)
         .EUt(30)
 
     event.recipes.gtceu.macerator("rhf_crushing")
         .itemInputs("gtceu:mega_blast_furnace")
         .itemOutputs("24x gtceu:stone_dust", "20x gtceu:naquadah_alloy_dust", "4x gtceu:invar_dust", "2x gtceu:rubber_dust")
+        .category("gtceu:macerator_recycling")
         .duration(20786)
         .EUt(30)
 
@@ -339,12 +341,14 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:mega_vacuum_freezer")
         .inputFluids("gtceu:oxygen 26976")
         .itemOutputs("18x gtceu:naquadah_alloy_ingot", "12x gtceu:stainless_steel_ingot", "12x gtceu:electrum_ingot", "gtceu:steel_block")
+        .category("gtceu:arc_furnace_recycling")
         .duration(26976)
         .EUt(30)
 
     event.recipes.gtceu.macerator("bbc_crushing")
         .itemInputs("gtceu:mega_vacuum_freezer")
         .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
+        .category("gtceu:macerator_recycling")
         .duration(25408)
         .EUt(302)
 
