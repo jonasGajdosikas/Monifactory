@@ -665,8 +665,8 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline consumption
     event.recipes.gtceu.combustion_generator("jean_gasoline_generator")
         .inputFluids("gtceu:jean_gasoline 1")
-        .duration(2560)
-        .EUt(-32)
+        .duration(160)
+        .EUt(-GTValues.V[GTValues.MV])
 
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor("kubejs:jean_gasoline")
@@ -892,9 +892,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor("tantalum_pentoxide")
-        .itemInputs("gtceu:tantalum_dust")
+        .itemInputs("2x gtceu:tantalum_dust")
         .inputFluids("gtceu:oxygen 5000")
-        .itemOutputs("gtceu:tantalum_pentoxide_dust")
+        .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 })
