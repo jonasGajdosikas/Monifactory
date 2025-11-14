@@ -69,6 +69,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x copper", "1x chlorine")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    event.create("cuprous_chloride")
+        .dust()
+        .color(0x4db8bf)
+        .components("1x copper", "1x chlorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     event.create("oxalic_acid_dihydrate")
         .dust()
         .color(0xfafaf7)
